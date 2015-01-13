@@ -3,6 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>虚拟现实产品制作工具</title>
     <script type="text/javascript">
+        var PROOT = "D:\\p";
+        
         function sppbuild(project_name)
         {
             Run("sppbuild");
@@ -10,27 +12,25 @@
         function sppviewscene()
         {
             var project_name = document.getElementById("project_name").value;
-            Run("spp.exe --tools=viewscene --thread --meshgen --debug", "D:\\p\\" + project_name + "\\target");
+            Run("spp.exe --tools=viewscene --thread --meshgen --debug", PROOT + "\\" + project_name + "\\target");
         }
         function sppAnywhereDoor()
         {
-            var project_name = document.getElementById("project_name").value;
-            SppTools(project_name, "AnywhereDoor");
+            SppTools("AnywhereDoor");
         }
         function sppVideoWall()
         {
-            var project_name = document.getElementById("project_name").value;
-            SppTools(project_name, "VideoWall");
+            SppTools("VideoWall");
         }
         function sppSandTable()
         {
-            var project_name = document.getElementById("project_name").value;
-            SppTools(project_name, "editSand_RolePosition");
+            SppTools("editSand_RolePosition");
         }
-        function SppTools(project_name, tool_name)
+        function SppTools(tool_name)
         {
-            var opt = "--tools=" + tool_name + " --thread --meshgen --debug --proj=" + "D:\\p\\" + project_name;
-            Run("spp.exe " + opt, "D:\\p\\" + project_name + "\\target");
+            var project_name = document.getElementById("project_name").value;
+            var opt = "--tools=" + tool_name + " --thread --meshgen --debug --proj=" + PROOT + "\\" + project_name;
+            Run("spp.exe " + opt, PROOT + "\\" + project_name + "\\target");
         }
         function spp_make_installer1(project_name)
         {
@@ -59,7 +59,7 @@
                 if ( current_dir === undefined )
                 {
                     var project_name = document.getElementById("project_name").value;
-                    var current_dir = "D:\\p\\" + project_name;
+                    var current_dir = PROOT + "\\" + project_name;
                 }
                 
                 var objShell = new ActiveXObject("wscript.shell");
@@ -68,7 +68,7 @@
                 objShell = null; 
             } 
             catch (e){ 
-                alert('找不到文件"'+realPath+'"(唉，出错啦)。请确定路径和文件名是否正确，而且所需的库文件均可用。') 
+                alert('找不到文件"'+current_dir+'"(唉，出错啦)。请确定路径和文件名是否正确，而且所需的库文件均可用。') 
             } 
         }
         function sppOnLoad()
