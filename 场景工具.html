@@ -5,8 +5,7 @@
     <script type="text/javascript">
         function sppbuild(project_name)
         {
-            var project_name = document.getElementById("project_name").value;
-            Run("sppbuild", "D:\\p\\" + project_name);
+            Run("sppbuild");
         }
         function sppviewscene()
         {
@@ -37,36 +36,33 @@
         {
             var cbx = document.getElementById("debug");
             
-            var project_name = document.getElementById("project_name").value;
-            var current_dir = "D:\\p\\" + project_name;
-            
             cmd = "sppbuild --publish=school --build --setup";
             if(cbx.checked)
                 cmd += " --debug=chenyang";
             
-            Run(cmd, current_dir);
+            Run(cmd);
         }
         function spp_make_installer2(project_name)
         {
-            var project_name = document.getElementById("project_name").value;
-            var current_dir = "D:\\p\\" + project_name;
-            Run("sppbuild --publish=tuanjiehugongyuan --build --setup", current_dir);
+            Run("sppbuild --publish=tuanjiehugongyuan --build --setup");
         }
         function spp_make_installer3(project_name)
         {
-            var project_name = document.getElementById("project_name").value;
-            var current_dir = "D:\\p\\" + project_name;
-            Run("sppbuild --publish=tuanjiehuxunizhanguan --build --setup", current_dir);
+            Run("sppbuild --publish=tuanjiehuxunizhanguan --build --setup");
         }
         function spp_weekly_building(project_name)
         {
-            var project_name = document.getElementById("project_name").value;
-            var current_dir = "D:\\p\\" + project_name;
-            Run("sppbuild --setupArt", current_dir);
+            Run("sppbuild --setupArt");
         }
         function Run(cmd, current_dir) {
-            try { 
-                var objShell = new ActiveXObject("wscript.shell"); 
+            try {
+                if ( current_dir === undefined )
+                {
+                    var project_name = document.getElementById("project_name").value;
+                    var current_dir = "D:\\p\\" + project_name;
+                }
+                
+                var objShell = new ActiveXObject("wscript.shell");
                 objShell.CurrentDirectory = current_dir;
                 objShell.Run(cmd); 
                 objShell = null; 
