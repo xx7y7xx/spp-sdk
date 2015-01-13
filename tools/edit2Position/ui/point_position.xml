@@ -1,0 +1,20 @@
+<POINT_POSITION_DATA>
+	<n__n0>
+		<name>
+			<chinese_name>前门</chinese_name>
+			<english_name>test</english_name>
+		</name>
+		<id_1>
+			<point_position_x>125.74927520751953</point_position_x>
+			<point_position_y>0.5282589793205261</point_position_y>
+			<point_position_z>-332.3567810058594</point_position_z>
+			<point_rotation_y>0</point_rotation_y>
+		</id_1>
+		<id_2>
+			<point_position_x>123.97398376464844</point_position_x>
+			<point_position_y>0.5282589793205261</point_position_y>
+			<point_position_z>-333.4557189941406</point_position_z>
+			<point_rotation_y>-2.42799711227417</point_rotation_y>
+		</id_2>
+	</n__n0>
+</POINT_POSITION_DATA>

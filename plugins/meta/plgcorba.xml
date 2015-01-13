@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.net.corba</name>
+        <implementation>spCorbaManager</implementation>
+        <description>Superpolo NetWork Corba Layer for crystalspace.</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

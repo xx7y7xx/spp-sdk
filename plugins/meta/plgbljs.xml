@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.behaviourlayer.jscript</name>
+        <implementation>spBlJs</implementation>
+        <description>Superpolo Javascript Behaviour Layer for crystalspace.</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

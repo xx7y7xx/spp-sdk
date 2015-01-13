@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!-- vfs.csplugin -->
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.script.cspace.core</name>
+        <implementation>spScript3DCore</implementation>
+        <description>Superpolo cspace encapsulation for v8.</description>
+        <requires>
+          <class>crystalspace.graphics3d.opengl</class>
+          <class>crystalspace.engine.3d</class>
+          <class>crystalspace.font.server.multiplexer</class>
+          <class>crystalspace.graphic.image.io.multiplexer</class>
+          <class>crystalspace.level.loader</class>
+          <class>crystalspace.utilities.reporter</class>
+          <class>crystalspace.utilities.sequence.engine</class>
+          <class>crystalspace.collisiondetection.opcode</class>
+        </requires>
+      </class>
+    </classes>
+  </scf>
+</plugin>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.script.ipc</name>
+        <implementation>spIPC</implementation>
+        <description>Superpolo IPC encapsulation for v8.</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

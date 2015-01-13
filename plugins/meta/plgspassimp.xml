@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.loader.3d</name>
+        <implementation>spAssimp</implementation>
+        <description>Superpolo assimp encapsulation for v8.</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

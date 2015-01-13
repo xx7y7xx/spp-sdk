@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<plugin>
+  <scf>
+    <classes>
+      <class>
+        <name>spp.addon.bljscript</name>
+        <implementation>spAddOnJScripts</implementation>
+        <description>Superpolo Javascript Behaviour Layer addon for crystalspace.</description>
+      </class>
+    </classes>
+  </scf>
+</plugin>

@@ -1,0 +1,31 @@
+timeEdition Copyright and Licensing
+--------------------------------------
+
+timeEdition is copyright (c) 2000-2009 by Living-e AG, Karlsruhe, Germany.
+
+timeEdition is distributed under the GPL 3 license, which can be found in the
+License.txt file.
+
+The license covers all source files in the timeEdition distribution, with the
+exception of the following third party software parts, which remain licensed 
+under their respective licenses.
+
+
+Third party software
+--------------------
+
+timeEdition uses the Windows Functionality Suite which is Copyright (c) by 
+Aaron Ballman and made available under a free License. See 
+http://www.aaronballman.com/license.html for details.
+
+The timeEdition widget uses SQLite which is under the public domain. 
+See http://www.sqlite.org/copyright.html for details.
+
+The timeEdition widget uses FMDatabase which is Copyright (c) by Gus Mueller and
+made available under the MIT License. 
+See http://www.opensource.org/licenses/mit-license.php for details.
+
+
+
+
+

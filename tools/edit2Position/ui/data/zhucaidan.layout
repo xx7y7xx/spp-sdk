@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="root" >
+        <Property Name="UnifiedMaxSize" Value="{{2,0},{2,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="General/Button" Name="kuaisudingwei/save" >
+            <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+            <Property Name="text_theme" Value="保存" />
+            <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+            <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverTextColour" Value="FF000000" />
+            <Property Name="UnifiedAreaRect" Value="{{0.908126,0},{0.42287,0},{0.96943,0},{0.488695,0}}" />
+            <Property Name="NormalTextColour" Value="FF000000" />
+            <Property Name="PushedTextColour" Value="FF000000" />
+        </Window>
+        <Window Type="General/Button" Name="school_map/btn" >
+            <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+            <Property Name="text_theme" Value="定位" />
+            <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+            <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverTextColour" Value="FF000000" />
+            <Property Name="UnifiedAreaRect" Value="{{0.908126,0},{0.283361,0},{0.96943,0},{0.349648,0}}" />
+            <Property Name="NormalTextColour" Value="FF000000" />
+            <Property Name="PushedTextColour" Value="FF000000" />
+        </Window>
+		<Window Type="General/Button" Name="360point/btn" >
+            <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+            <Property Name="text_theme" Value="360点" />
+            <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+            <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverTextColour" Value="FF000000" />
+            <Property Name="UnifiedAreaRect" Value="{{0.908126,0},{0.563361,0},{0.96943,0},{0.629648,0}}" />
+            <Property Name="NormalTextColour" Value="FF000000" />
+            <Property Name="PushedTextColour" Value="FF000000" />
+        </Window>
+		<Window Type="General/Button" Name="360point_export/btn" >
+			<Property Name="Visible" Value="False" />
+            <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+            <Property Name="text_theme" Value="导出" />
+            <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+            <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="HoverTextColour" Value="FF000000" />
+            <Property Name="UnifiedAreaRect" Value="{{0.908126,0},{0.563361,0},{0.96943,0},{0.629648,0}}" />
+            <Property Name="NormalTextColour" Value="FF000000" />
+            <Property Name="PushedTextColour" Value="FF000000" />
+        </Window>
+		<Window Type="General/DefaultWindowBackground" Name="360point/background" >
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.682751,0},{0.624541,0},{0.974872,0},{0.88671,0}}" />
+            <Window Type="General/StaticText" Name="360point/background/text" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="Text" Value="输入建筑name，如雍和宫:" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.068883,0},{0.95,0},{0.212376,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+			<Window Type="General/Editbox" Name="360point/Editbox" >
+                <Property Name="MaxTextLength" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.178675,0},{0.17503,0},{0.732632,0},{0.311343,0}}" />
+            </Window>
+			<Window Type="General/StaticText" Name="360point/background_qian/text" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="Text" Value="输入1或2,1代表进360前一点，2代表后一点" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.348883,0},{0.95,0},{0.492376,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+			<Window Type="General/Editbox" Name="360point/qian/Editbox" >
+                <Property Name="MaxTextLength" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.178675,0},{0.47503,0},{0.732632,0},{0.611343,0}}" />
+            </Window>
+            <Window Type="General/Button" Name="360point/input_name/ok" >
+                <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+                <Property Name="text_theme" Value="确 认" />
+                <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+                <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.25399,0},{0.652546,0},{0.450647,0},{0.802414,0}}" />
+                <Property Name="NormalTextColour" Value="FF000000" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+            <Window Type="General/Button" Name="360point/input_name/cancle" >
+                <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+                <Property Name="text_theme" Value="取 消" />
+                <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+                <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.547712,0},{0.652546,0},{0.751413,0},{0.802414,0}}" />
+                <Property Name="NormalTextColour" Value="FF000000" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+		<Window Type="General/DefaultWindowBackground" Name="360point/other_point/background" >
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.682751,0},{0.624541,0},{0.974872,0},{0.88671,0}}" />
+			<Window Type="General/StaticText" Name="360point/background/other_point/text" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="Text" Value="输入另一个点，1或2" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.348883,0},{0.95,0},{0.492376,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+			<Window Type="General/Editbox" Name="360point/other_point/Editbox" >
+                <Property Name="MaxTextLength" Value="100" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.178675,0},{0.47503,0},{0.732632,0},{0.611343,0}}" />
+            </Window>
+            <Window Type="General/Button" Name="360point/other_point/input_name/ok" >
+                <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+                <Property Name="text_theme" Value="确 认" />
+                <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+                <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.25399,0},{0.652546,0},{0.450647,0},{0.802414,0}}" />
+                <Property Name="NormalTextColour" Value="FF000000" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+            <Window Type="General/Button" Name="360point/other_point/input_name/cancle" >
+                <Property Name="HoverImage" Value="set:introschool image:btn_down" />
+                <Property Name="text_theme" Value="取 消" />
+                <Property Name="NormalImage" Value="set:introschool image:btn_down" />
+                <Property Name="PushedImage" Value="set:introschool image:btn_down" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.547712,0},{0.652546,0},{0.751413,0},{0.802414,0}}" />
+                <Property Name="NormalTextColour" Value="FF000000" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+        <Window Type="General/DefaultWindow" Name="menu_bar/button_shezhi/window" >
+            <Property Name="text_theme" Value="快速定位" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0436671,0},{0.44687,0},{0.604969,0},{0.593582,0}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+        </Window>
+        <Window Type="General/DefaultWindowBackground" Name="zhucaidan/kuaisudingwei" >
+			<Property Name="Visible" Value="False" />
+            <Property Name="text_theme" Value="快速定位" />
+            <Property Name="text_colour" Value="FFFFFFFF" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+			<Property Name="MousePassThroughEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.12079,0},{0.0426042,0},{0.885439,0},{0.806341,0}}" />
+            <Window Type="General/StaticImage" Name="kuaisudingwei/logo_image" >
+                <Property Name="image" Value="set:zhucaidan image:btn_xiaoyuanjieshao_normal" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0178512,0},{-0.0123589,0},{0.0717936,0},{0.0701818,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="General/Button" Name="kuaisudingwei/close_button" >
+                <Property Name="HoverImage" Value="set:introschool image:btn_close" />
+                <Property Name="NormalImage" Value="set:introschool image:btn_close" />
+                <Property Name="PushedImage" Value="set:introschool image:btn_close" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.963848,0},{0.00303915,0},{0.993956,0},{0.0428887,0}}" />
+            </Window>
+            <Window Type="General/DefaultWindowBackground" Name="kuaisudingwei/window" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.00537242,0},{0.0268773,0},{0.987808,0},{0.973244,0}}" />
+                <Window Type="General/StaticImage" Name="kuaisudingwei/map_bg" >
+                    <Property Name="image" Value="set:kuaisudingwei image:full_image" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.00537242,0},{0.0268773,0},{0.987808,0},{0.973244,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+					<Window Type="General/RadioButton" Name="kuaisudingwei/dingwei_btn" >
+						<Property Name="HoverImage" Value="set:ice image:ButtonNormal" />
+                        <Property Name="text_theme" Value="定位点" />
+						<Property Name="Visible" Value="False" />
+                        <Property Name="font" Value="Yahei8" />
+                        <Property Name="NormalImage" Value="set:ice image:ButtonNormal" />
+                        <Property Name="SelectedImage" Value="set:ice image:ButtonNormal" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="NormalTextColour" Value="FF000000" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.696211,0},{0.9349705,0},{0.764311,0},{0.9802705,0}}" />
+                        <Property Name="SelectedTextColour" Value="FF000080" />
+					</Window>
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="General/DefaultWindowBackground" Name="kuaisudingwei/name" >
+			<Property Name="Visible" Value="False" />
+            <Property Name="text_theme" Value="name" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.127331,0},{0.811372,0},{0.880482,0},{0.941763,0}}" />
+            <Window Type="General/Editbox" Name="kuaisudingwei/chinses_name">
+                <Property Name="MaxTextLength" Value="30" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.065253,0},{0.40733,0},{0.315253,0},{0.65733,0}}" />
+            </Window>
+			<Window Type="General/Editbox" Name="kuaisudingwei/english_name">
+				<Property Name="Visible" Value="False" />
+                <Property Name="MaxTextLength" Value="30" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.065253,0},{0.40733,0},{0.315253,0},{0.65733,0}}" />
+            </Window>
+            <Window Type="General/Button" Name="kuaisudingwei/ok" >
+                <Property Name="text_theme" Value="确定" />
+				<Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.72183,0},{0.351214,0},{0.822274,0},{0.708544,0}}" />
+				<Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+            <Window Type="General/Button" Name="kuaisudingwei/cancel" >
+                <Property Name="text_theme" Value="取消" />
+				<Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.855907,0},{0.353641,0},{0.958243,0},{0.681699,0}}" />
+				<Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>
