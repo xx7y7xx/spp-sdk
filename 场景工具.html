@@ -1,116 +1,116 @@
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>虚拟现实产品制作工具</title>
-	<script type="text/javascript">
-		function sppbuild(project_name)
-		{
-			var project_name = document.getElementById("project_name").value;
-			Run("sppbuild", "D:\\p\\" + project_name);
-		}
-		function sppviewscene()
-		{
-			var project_name = document.getElementById("project_name").value;
-			Run("spp.exe --tools=viewscene --thread --meshgen --debug", "D:\\p\\" + project_name + "\\target");
-		}
-		function sppAnywhereDoor()
-		{
-			var project_name = document.getElementById("project_name").value;
-			SppTools(project_name, "AnywhereDoor");
-		}
-		function sppVideoWall()
-		{
-			var project_name = document.getElementById("project_name").value;
-			SppTools(project_name, "VideoWall");
-		}
-		function sppSandTable()
-		{
-			var project_name = document.getElementById("project_name").value;
-			SppTools(project_name, "editSand_RolePosition");
-		}
-		function SppTools(project_name, tool_name)
-		{
-			var opt = "--tools=" + tool_name + " --thread --meshgen --debug --proj=" + "D:\\p\\" + project_name;
-			Run("spp.exe " + opt, "D:\\p\\" + project_name + "\\target");
-		}
-		function spp_make_installer1(project_name)
-		{
-			var cbx = document.getElementById("debug");
-			
-			var project_name = document.getElementById("project_name").value;
-			var current_dir = "D:\\p\\" + project_name;
-			
-			cmd = "sppbuild --publish=school --build --setup";
-			if(cbx.checked)
-				cmd += " --debug=chenyang";
-			
-			Run(cmd, current_dir);
-		}
-		function spp_make_installer2(project_name)
-		{
-			var project_name = document.getElementById("project_name").value;
-			var current_dir = "D:\\p\\" + project_name;
-			Run("sppbuild --publish=tuanjiehugongyuan --build --setup", current_dir);
-		}
-		function spp_make_installer3(project_name)
-		{
-			var project_name = document.getElementById("project_name").value;
-			var current_dir = "D:\\p\\" + project_name;
-			Run("sppbuild --publish=tuanjiehuxunizhanguan --build --setup", current_dir);
-		}
-		function spp_weekly_building(project_name)
-		{
-			var project_name = document.getElementById("project_name").value;
-			var current_dir = "D:\\p\\" + project_name;
-			Run("sppbuild --setupArt", current_dir);
-		}
-		function Run(cmd, current_dir) {
-			try { 
-				var objShell = new ActiveXObject("wscript.shell"); 
-				objShell.CurrentDirectory = current_dir;
-				objShell.Run(cmd); 
-				objShell = null; 
-			} 
-			catch (e){ 
-				alert('找不到文件"'+realPath+'"(唉，出错啦)。请确定路径和文件名是否正确，而且所需的库文件均可用。') 
-			} 
-		}
-		function sppOnLoad()
-		{
-			window.resizeTo(500,600);
-		}
-	</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>虚拟现实产品制作工具</title>
+    <script type="text/javascript">
+        function sppbuild(project_name)
+        {
+            var project_name = document.getElementById("project_name").value;
+            Run("sppbuild", "D:\\p\\" + project_name);
+        }
+        function sppviewscene()
+        {
+            var project_name = document.getElementById("project_name").value;
+            Run("spp.exe --tools=viewscene --thread --meshgen --debug", "D:\\p\\" + project_name + "\\target");
+        }
+        function sppAnywhereDoor()
+        {
+            var project_name = document.getElementById("project_name").value;
+            SppTools(project_name, "AnywhereDoor");
+        }
+        function sppVideoWall()
+        {
+            var project_name = document.getElementById("project_name").value;
+            SppTools(project_name, "VideoWall");
+        }
+        function sppSandTable()
+        {
+            var project_name = document.getElementById("project_name").value;
+            SppTools(project_name, "editSand_RolePosition");
+        }
+        function SppTools(project_name, tool_name)
+        {
+            var opt = "--tools=" + tool_name + " --thread --meshgen --debug --proj=" + "D:\\p\\" + project_name;
+            Run("spp.exe " + opt, "D:\\p\\" + project_name + "\\target");
+        }
+        function spp_make_installer1(project_name)
+        {
+            var cbx = document.getElementById("debug");
+            
+            var project_name = document.getElementById("project_name").value;
+            var current_dir = "D:\\p\\" + project_name;
+            
+            cmd = "sppbuild --publish=school --build --setup";
+            if(cbx.checked)
+                cmd += " --debug=chenyang";
+            
+            Run(cmd, current_dir);
+        }
+        function spp_make_installer2(project_name)
+        {
+            var project_name = document.getElementById("project_name").value;
+            var current_dir = "D:\\p\\" + project_name;
+            Run("sppbuild --publish=tuanjiehugongyuan --build --setup", current_dir);
+        }
+        function spp_make_installer3(project_name)
+        {
+            var project_name = document.getElementById("project_name").value;
+            var current_dir = "D:\\p\\" + project_name;
+            Run("sppbuild --publish=tuanjiehuxunizhanguan --build --setup", current_dir);
+        }
+        function spp_weekly_building(project_name)
+        {
+            var project_name = document.getElementById("project_name").value;
+            var current_dir = "D:\\p\\" + project_name;
+            Run("sppbuild --setupArt", current_dir);
+        }
+        function Run(cmd, current_dir) {
+            try { 
+                var objShell = new ActiveXObject("wscript.shell"); 
+                objShell.CurrentDirectory = current_dir;
+                objShell.Run(cmd); 
+                objShell = null; 
+            } 
+            catch (e){ 
+                alert('找不到文件"'+realPath+'"(唉，出错啦)。请确定路径和文件名是否正确，而且所需的库文件均可用。') 
+            } 
+        }
+        function sppOnLoad()
+        {
+            window.resizeTo(500,600);
+        }
+    </script>
 </head>
 <body onload="sppOnLoad();">
-	<noscript>
-		<style>
-			#map_bg{display:none;}
-			#map_tag{display:none;}
-		</style>
-		<div id="noscript-warning"> 
-		您的浏览器禁用了脚本，请<a href="help/openJsHelp.html">点击这里获得帮助！</a> 
-		</div> 
-	</noscript> 
-	<p><h1>虚拟现实产品制作工具</h1></p>
-	<p>
-		<input id="debug" name="debug" type="checkbox" title="use this checkbox to debug" />项目文件夹名称：
-		<input id="project_name" name="project_name" value="sample" name="project_name">
-	</p>
-	<ul>
-		<li><input id="sppbuild" name="sppbuild" type="button" value="构建" onClick='sppbuild()'></li>
-		<li><input id="viewscene" name="viewscene" type="button" value="预览" onClick='sppviewscene()'></li>
-	</ul>
-	<ul>
-		<li><input id="weeklybuild" name="weeklybuild" type="button" value="每周打包" onClick='spp_weekly_building()'></li>
-		<li><input id="schoolbuild" name="schoolbuild" type="button" value="校园项目 - 安装版构建数据及打包" onClick='spp_make_installer1()'></li>
-		<li><input id="tuanjiehugongyuanbuild" name="tuanjiehugongyuanbuild" type="button" value="团结湖公园项目 - 安装版构建数据及打包" onClick='spp_make_installer2()'></li>
-		<li><input id="tuanjiehuxunizhanguan" name="tuanjiehuxunizhanguan" type="button" value="团结湖虚拟展馆项目 - 安装版构建数据及打包" onClick='spp_make_installer3()'></li>
-	</ul>
-	<h1>功能</h1>
-	<ul>
-		<li><input id="AnywhereDoor" name="AnywhereDoor" type="button" value="任意门" onClick='sppAnywhereDoor()'></li>
-		<li><input id="VideoWall" name="VideoWall" type="button" value="视频墙" onClick='sppVideoWall()'></li>
-		<li><input id="SandTable" name="SandTable" type="button" value="电子沙盘" onClick='sppSandTable()'></li>
-	</ul>
+    <noscript>
+        <style>
+            #map_bg{display:none;}
+            #map_tag{display:none;}
+        </style>
+        <div id="noscript-warning"> 
+        您的浏览器禁用了脚本，请<a href="help/openJsHelp.html">点击这里获得帮助！</a> 
+        </div> 
+    </noscript> 
+    <p><h1>虚拟现实产品制作工具</h1></p>
+    <p>
+        <input id="debug" name="debug" type="checkbox" title="use this checkbox to debug" />项目文件夹名称：
+        <input id="project_name" name="project_name" value="sample" name="project_name">
+    </p>
+    <ul>
+        <li><input id="sppbuild" name="sppbuild" type="button" value="构建" onClick='sppbuild()'></li>
+        <li><input id="viewscene" name="viewscene" type="button" value="预览" onClick='sppviewscene()'></li>
+    </ul>
+    <ul>
+        <li><input id="weeklybuild" name="weeklybuild" type="button" value="每周打包" onClick='spp_weekly_building()'></li>
+        <li><input id="schoolbuild" name="schoolbuild" type="button" value="校园项目 - 安装版构建数据及打包" onClick='spp_make_installer1()'></li>
+        <li><input id="tuanjiehugongyuanbuild" name="tuanjiehugongyuanbuild" type="button" value="团结湖公园项目 - 安装版构建数据及打包" onClick='spp_make_installer2()'></li>
+        <li><input id="tuanjiehuxunizhanguan" name="tuanjiehuxunizhanguan" type="button" value="团结湖虚拟展馆项目 - 安装版构建数据及打包" onClick='spp_make_installer3()'></li>
+    </ul>
+    <h1>功能</h1>
+    <ul>
+        <li><input id="AnywhereDoor" name="AnywhereDoor" type="button" value="任意门" onClick='sppAnywhereDoor()'></li>
+        <li><input id="VideoWall" name="VideoWall" type="button" value="视频墙" onClick='sppVideoWall()'></li>
+        <li><input id="SandTable" name="SandTable" type="button" value="电子沙盘" onClick='sppSandTable()'></li>
+    </ul>
 </body>
 </html>
